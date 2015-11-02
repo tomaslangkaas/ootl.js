@@ -12,5 +12,11 @@ var ootl = {
   },
   elm: function(id){
     return document.getElementById(id) || {};
+  },
+  xhr: function(){
+    //https://gist.github.com/jed/993585#gistcomment-876247
+    try{
+      return new(window.XMLHttpRequest || ActiveXObject)('MSXML2.XMLHTTP.3.0')
+    }catch(e){}
   }
 };
