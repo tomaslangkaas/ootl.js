@@ -1,6 +1,6 @@
 var ootl = {
   removeClass: function(elm, cls){
-    var w = '';
+    var w = ' ';
     elm.className = (w + elm.className + w)
       .split(w + cls + w)
       .join(w)
